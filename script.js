@@ -10,3 +10,16 @@ const jump = () => {
         player1.classList.remove('animate')
     },500)
 }
+
+const checkDeath = setInterval(function() {
+    const player1Top =  
+    parseInt(window.getComputedStyle(player1).
+     getPropertyValue('top'));
+     const obstacle1Left =
+     parseInt(window.getComputedStyle(obstacle1).getPropertyValue('left'));
+     if(obstacle1Left<20 && obstacle1Left>0 && player1Top>=130) {
+         obstacle1.style.animation = 'none'
+         obstacle1.style.display = 'none'
+          alert('you dead')
+     };
+}, 10)
