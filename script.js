@@ -10,3 +10,4 @@ const jump = () => {
         player1.classList.remove('animate')
     },500)
 }
+

@@ -22,7 +22,7 @@
     top: 150px;
     background-color: var(--Aliz);
     position: relative;
-    animation: player1 500ms infinite;
+    /* animation: jump 500ms; */
     
 }
 
@@ -36,7 +36,7 @@
     animation: obstacle1 1s infinite linear;
 }
 
-@keyframes player1 {
+@keyframes jump {
     0%{top: 150px;}
     30%{top: 100px;}
     70%{top: 100px;}
@@ -49,5 +49,5 @@
 }
 
 .animate{
-    animation: player1 500ms infinite
+    animation: jump 500ms; 
 }
